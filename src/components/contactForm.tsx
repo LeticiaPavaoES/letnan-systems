@@ -10,7 +10,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Add submit logic (API call, etc.)
     console.log(formData);
   };
 
