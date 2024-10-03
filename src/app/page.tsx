@@ -1,7 +1,7 @@
 import ContactForm from "@/components/contactForm";
 import MapComponent from "@/components/mapComponent";
 import ServiceCard from "@/components/serviceCard";
-import TestimonialSection from "@/components/testemonial";
+import TestimonialSection from "@/components/testimonial";
 import React from "react";
 import Link from "next/link";
 
