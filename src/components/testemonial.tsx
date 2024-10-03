@@ -44,7 +44,7 @@ const TestimonialCard = ({ name, role, company, message, image }: TestimonialPro
                 alt={`Photo of ${name}`}
                 width={64}
                 height={64}
-                className="w-16 h-16 rounded-full mx-auto mb-4"
+                className="w-16 h-16 rounded-full mx-auto pb-4"
             />
             <h3 className="text-xl font-semibold text-center text-gray-800">{name}</h3>
             <p className="text-gray-600 text-center">{role}, {company}</p>
