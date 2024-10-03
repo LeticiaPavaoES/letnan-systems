@@ -4,13 +4,11 @@ import Testemonial from '@/components/testemonial';
 
 const Testimonials = () => {
   return (
-    <div>
-     
-      <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-6">What our clients say</h1>
+    <section className="py-16 px-4 bg-gray-100 min-h-screen">
+    <div className=" w-full  mx-auto px-4 py-8">
         <Testemonial />
-      </main>
     </div>
+  </section>
   );
 };
 

@@ -50,9 +50,6 @@ const HomePage = () => {
 
             <section className="bg-gray-100 py-12">
                 <div className="container mx-auto">
-                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
-                        O que nossos clientes dizem
-                    </h2>
                     <TestimonialSection
                     />
                 </div>
@@ -68,7 +65,7 @@ const HomePage = () => {
             </section>
 
             <section className="bg-gray-100 py-12">
-                <div className="container mx-auto">
+                <div className="container mx-auto max-w-4xl">
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
                         Entre em Contato
                     </h2>
