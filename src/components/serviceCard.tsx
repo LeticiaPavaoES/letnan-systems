@@ -5,13 +5,13 @@ import type React from "react";
 interface ServiceCardProps {
   title: string;
   description: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, onClick }) => {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
-      onClick();
+      onClick?.() ;
     }
   };
 

@@ -5,7 +5,21 @@ import 'leaflet/dist/leaflet.css';
 import { useEffect } from 'react';
 import L from 'leaflet';
 
-delete L.Icon.Default.prototype._getIconUrl;
+const markerIcon2x = 'leaflet/dist/images/marker-icon-2x.png';
+const markerIcon = 'leaflet/dist/images/marker-icon.png';
+const markerShadow = 'leaflet/dist/images/marker-shadow.png';
+
+const defaultIcon = L.icon({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
+L.Marker.prototype.options.icon = defaultIcon;
 
 const LeafletMap = () => {
   useEffect(() => {

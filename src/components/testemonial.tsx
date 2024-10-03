@@ -59,8 +59,8 @@ const TestimonialSection = () => {
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold pb-8 text-gray-800">O que os nossos clientes dizem</h2>
                 <div className="flex flex-wrap justify-center">
-                    {testimonials.map((testimonial, index) => (
-                        <TestimonialCard key={index} {...testimonial} />
+                    {testimonials.map((testimonial) => (
+                        <TestimonialCard key={testimonial.name} {...testimonial} />
                     ))}
                 </div>
             </div>
