@@ -17,7 +17,6 @@ const CompliancePage = () => {
           <Shield className="h-10 w-10 text-amber-600" />
           <div>
             <h1 className="text-3xl font-bold text-gray-900">Programa de Compliance</h1>
-            <p className="mt-1 text-amber-700">Letnan Systems</p>
           </div>
         </div>
       </div>
@@ -71,7 +70,8 @@ const CompliancePage = () => {
                 description: 'Cultivar uma mentalidade de conformidade e comportamento ético em todos os níveis.'
               }
             ].map((value, index) => (
-              <div key={index} className="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+<div key={index} className="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
                 <h3 className="font-semibold text-lg text-amber-700 mb-2">{value.title}</h3>
                 <p className="text-gray-600 text-sm">{value.description}</p>
               </div>
@@ -197,7 +197,8 @@ const CompliancePage = () => {
                 description: 'Programas de e-learning para atualização contínua sobre leis e regulamentações.'
               }
             ].map((training, index) => (
-              <div key={index} className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+<div key={index} className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-lg text-amber-800 mb-2">{training.title}</h3>
                 <p className="text-gray-600 text-sm">{training.description}</p>
               </div>
@@ -343,7 +344,8 @@ const CompliancePage = () => {
                   description: 'Para infrações graves, como fraude e corrupção'
                 }
               ].map((penalty, index) => (
-                <div key={index} className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+<div key={index} className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                   <h3 className="font-semibold text-lg text-amber-800 mb-2">{penalty.title}</h3>
                   <p className="text-gray-600 text-sm">{penalty.description}</p>
                 </div>

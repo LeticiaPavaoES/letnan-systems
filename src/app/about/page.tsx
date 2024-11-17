@@ -1,60 +1,105 @@
+"use client";
+
 import React from "react";
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Users, Target, Lightbulb, ShieldCheck, Globe } from 'lucide-react';
 
 const About = () => {
-    return (
-        <section className="bg-white py-12">
-            <div className="container mx-auto px-4 py-8">
-                <h1 className="text-4xl font-bold mb-6 text-gray-800">Sobre a Letnan Systems</h1>
-                <p className="pb-4 text-gray-500">
-                    A <strong>Letnan Systems</strong> é uma empresa especializada em desenvolvimento de software sob medida, oferecendo soluções tecnológicas inovadoras que aumentam a produtividade e otimizam os processos operacionais de nossos clientes. Nosso foco é garantir que cada solução desenvolvida esteja alinhada às necessidades específicas do ambiente de negócios, utilizando as mais recentes tecnologias do mercado para maximizar o impacto e os resultados.
-                </p>
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Header Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="flex items-center space-x-4">
+          <Users className="h-10 w-10 text-amber-600" />
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900">Sobre a Letnan Systems</h1>
+            <p className="text-lg text-gray-600">Nossa história, essência e valores</p>
+          </div>
+        </div>
+      </div>
 
-                <h2 className="text-2xl font-semibold text-gray-500 pb-4">Nossos Serviços</h2>
-                <p className="pb-4 text-gray-500">
-                    Na Letnan Systems, oferecemos uma ampla gama de serviços que visam transformar as operações dos nossos clientes por meio da tecnologia. Nossos principais serviços incluem:
-                </p>
-                <ul className="list-disc list-inside text-gray-500 pb-4">
-                    <li><strong>Consultoria em Soluções Tecnológicas:</strong> Análise profunda das necessidades dos nossos clientes, com o desenvolvimento de um plano estratégico sob medida para maximizar a eficiência e inovação.</li>
-                    <li><strong>Desenvolvimento de Software:</strong> Criação de aplicativos personalizados para desktop, dispositivos móveis e web, com foco em alta performance e escalabilidade.</li>
-                    <li><strong>Automação de Processos:</strong> Implementação de ferramentas que automatizam tarefas repetitivas, liberando tempo e recursos para outras áreas essenciais do negócio.</li>
-                </ul>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Introduction Card */}
+        <Card className="mb-8 bg-white">
+          <CardContent className="pt-6">
+            <p className="text-gray-700">
+              A Letnan Systems nasceu do encontro entre a paixão pela tecnologia e a determinação de dois amigos, <span className="text-amber-600">Letícia</span> e <span className="text-amber-600">Renan</span>. Desde os primeiros passos na faculdade, eles compartilharam o sonho de transformar ideias em soluções inovadoras e impactantes. Fundaram a Letnan Systems para oferecer soluções tecnológicas personalizadas, alinhadas às necessidades únicas de cada cliente.
+            </p>
+            <p className="text-gray-700 mt-4">
+              A Letnan Systems é muito mais do que uma empresa; é o reflexo de uma parceria sólida, da união de talentos e de uma visão compartilhada de inovação e excelência.
+            </p>
+          </CardContent>
+        </Card>
 
-                <h2 className="text-2xl font-semibold text-gray-500 pb-4">Segurança de Dados e Sistemas</h2>
-                <p className="text-gray-500 pb-4">
-                    Temos um compromisso inabalável com a segurança da informação. A Letnan Systems garante a proteção total dos dados e sistemas dos nossos clientes, implementando medidas de segurança robustas como:
+        {/* Mission, Vision, and Values Section */}
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Nossa Essência</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="bg-white">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <Target className="h-6 w-6 text-amber-600" />
+                  Missão
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Proporcionar soluções tecnológicas personalizadas e inovadoras que otimizem processos e impulsionem o crescimento de nossos clientes.
                 </p>
-                <ul className="list-disc list-inside text-gray-500 pb-4">
-                    <li><strong>Firewall Fortinet:</strong> Proteção avançada contra ameaças externas, garantindo a integridade da rede.</li>
-                    <li><strong>Backup Automatizado:</strong> Soluções confiáveis com Veeam e Acronis para garantir a recuperação rápida em caso de falhas ou perda de dados.</li>
-                    <li><strong>Antivírus:</strong> Utilizamos Kaspersky e Norton para proteção contra malware e ameaças emergentes.</li>
-                    <li><strong>Segurança em Nuvem:</strong> Monitoramento contínuo e criptografia de dados armazenados em plataformas seguras como AWS e Microsoft Azure, com políticas rígidas de acesso.</li>
-                </ul>
+              </CardContent>
+            </Card>
 
-                <h2 className="text-2xl font-semibold text-gray-500 pb-4">Infraestrutura de Rede e Internet</h2>
-                <p className="text-gray-500 pb-4">
-                    Nossa infraestrutura de rede é projetada para oferecer alta performance e disponibilidade contínua, garantindo que os sistemas dos nossos clientes operem com máxima eficiência e confiabilidade:
+            <Card className="bg-white">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <Lightbulb className="h-6 w-6 text-amber-600" />
+                  Visão
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Ser referência no mercado de desenvolvimento de software, reconhecida pela inovação e entrega de soluções que agregam valor aos negócios de nossos clientes.
                 </p>
-                <ul className="list-disc list-inside text-gray-500 pb-4">
-                    <li><strong>Roteadores e Switches Cisco:</strong> Garantia de uma conectividade segura e estável, essencial para grandes operações.</li>
-                    <li><strong>Servidores Dell PowerEdge e HP ProLiant:</strong> Hospedagem confiável de aplicativos críticos e backup seguro de dados.</li>
-                    <li><strong>Redundância de Dados:</strong> Infraestrutura que suporta grandes volumes de dados, com recuperação rápida em caso de falhas.</li>
-                </ul>
+              </CardContent>
+            </Card>
 
-                <h2 className="text-2xl font-semibold text-gray-500 pb-4">Comunicação Transparente com Clientes</h2>
-                <p className="text-gray-500 pb-4">
-                    Na Letnan Systems, acreditamos que a comunicação aberta e constante é fundamental para o sucesso de qualquer projeto. Utilizamos ferramentas colaborativas para garantir que nossos clientes estejam sempre informados sobre o progresso de seus projetos:
-                </p>
-                <ul className="list-disc list-inside text-gray-500 pb-4">
-                    <li><strong>Microsoft Teams e Slack:</strong> Comunicação instantânea e eficiente para discutir detalhes técnicos e ajustes em tempo real.</li>
-                    <li><strong>Jira e Trello:</strong> Ferramentas de gerenciamento de projetos que proporcionam visibilidade total sobre o andamento e as tarefas em execução.</li>
-                    <li><strong>Confluence:</strong> Documentação detalhada e organizada, acessível a qualquer momento para consulta sobre as soluções implementadas.</li>
+            <Card className="bg-white">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <ShieldCheck className="h-6 w-6 text-amber-600" />
+                  Valores
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc list-inside text-gray-600">
+                  <li><span className="text-amber-600 font-bold">Inovação:</span> Novas tecnologias e metodologias.</li>
+                  <li><span className="text-amber-600 font-bold">Excelência:</span> Resultados que transformam negócios.</li>
+                  <li><span className="text-amber-600 font-bold">Transparência:</span> Comunicação clara e aberta.</li>
+                  <li><span className="text-amber-600 font-bold">Compromisso:</span> Dedicação total às necessidades dos clientes.</li>
+                  <li><span className="text-amber-600 font-bold">Ética:</span> Integridade em todas as ações.</li>
                 </ul>
-                <p className="text-gray-500 pb-4">
-                    Nosso objetivo é construir uma parceria sólida com cada cliente, oferecendo soluções que não apenas atendem às suas necessidades atuais, mas que também estão preparadas para escalar com o crescimento do seu negócio.
-                </p>
-            </div>
-        </section>
-    );
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Closing Statement */}
+        <Card className="mt-8 bg-white border-amber-200">
+          <CardHeader>
+            <CardTitle className="text-xl flex items-center gap-2">
+              <Globe className="h-6 w-6 text-amber-600" />
+              Nosso Compromisso
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-700">
+              Na Letnan Systems, transformamos desafios em oportunidades, tecnologia em resultados e parcerias em histórias de sucesso. Nosso objetivo é ser a ponte entre suas ideias e o futuro que você imagina.
+            </p>
+          </CardContent>
+        </Card>
+      </main>
+    </div>
+  );
 };
 
 export default About;
