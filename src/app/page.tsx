@@ -17,7 +17,7 @@ const HomePage = () => {
           <h1 className="text-4xl md:text-4xl font-extrabold tracking-tight pb-6">
             Bem-vindo à
           </h1>
-          <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-purple-600 pb-6">
+          <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-700">
             Letnan Systems
           </h1>
           <p className="text-lg md:text-2xl text-gray-300">
@@ -55,7 +55,7 @@ const HomePage = () => {
 
               <button
                 type="button"
-                className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-full mt-8">
+                className="bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-700 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full mt-8">
                 Saiba mais
               </button>
             </Link>

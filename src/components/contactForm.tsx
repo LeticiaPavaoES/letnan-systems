@@ -54,11 +54,11 @@ const ContactForm = () => {
                             required
                         />
                     </div>
-                    <button type="submit" className="bg-purple-500 text-white py-2 px-4 rounded-md">Enviar</button>
+                    <button type="submit" className="bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-700 text-white py-2 px-4 rounded-md">Enviar</button>
                 </form>
             ) : (
-                <div className="mt-4 p-4 bg-purple-100 border border-purple-500 rounded-lg shadow-md">
-                    <p className="text-lg text-purple-500 font-bold text-center">
+                <div className="mt-4 p-4 bg-yellow-100 border border-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-700 rounded-lg shadow-md">
+                    <p className="text-lg text-yellow-500 font-bold text-center">
                         Muito obrigado pelo contato, retornaremos em breve.
                     </p>
                 </div>

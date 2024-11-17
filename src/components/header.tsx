@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -13,7 +14,16 @@ export default function Header() {
   return (
     <header className="bg-black p-4">
       <div className="container mx-auto flex justify-between items-center">
+      <div className="flex items-center space-x-3">
+          <Image
+            src="/favicon.ico"
+            alt="Letnan Systems Logo"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
         <h1 className="text-white text-xl font-bold">Letnan Systems</h1>
+        </div>
         
         {/* Botão para o menu em telas menores */}
         <div className="md:hidden">
@@ -51,6 +61,11 @@ export default function Header() {
             <li>
               <Link href="/about" className="text-white hover:text-gray-300">
                 Sobre nós
+              </Link>
+            </li>
+            <li>
+              <Link href="/compliance" className="text-white hover:text-gray-300">
+                Compliance
               </Link>
             </li>
             <li>
