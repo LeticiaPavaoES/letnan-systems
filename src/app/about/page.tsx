@@ -26,6 +26,9 @@ const About = () => {
               A Letnan Systems nasceu do encontro entre a paixão pela tecnologia e a determinação de dois amigos, <span className="text-amber-600">Letícia</span> e <span className="text-amber-600">Renan</span>. Desde os primeiros passos na faculdade, eles compartilharam o sonho de transformar ideias em soluções inovadoras e impactantes. Fundaram a Letnan Systems para oferecer soluções tecnológicas personalizadas, alinhadas às necessidades únicas de cada cliente.
             </p>
             <p className="text-gray-700 mt-4">
+            O diferencial da Letnan Systems está na personalização de suas soluções, sempre alinhadas com as <span className="text-amber-600">necessidades específicas</span> de cada cliente, além de um suporte técnico especializado e uma abordagem consultiva para maximizar resultados.
+            </p>
+            <p className="text-gray-700 mt-4">
               A Letnan Systems é muito mais do que uma empresa; é o reflexo de uma parceria sólida, da união de talentos e de uma visão compartilhada de inovação e excelência.
             </p>
           </CardContent>

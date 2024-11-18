@@ -11,7 +11,7 @@ const HomePage = () => {
       <section
         className="relative flex flex-col items-center justify-center h-screen text-white"
       >
-        <div className="absolute inset-0 bg-black opacity-50" />
+        <div className="absolute inset-0 bg-black" />
 
         <div className="relative z-10 max-w-3xl text-center">
           <h1 className="text-4xl md:text-4xl font-extrabold tracking-tight pb-6">

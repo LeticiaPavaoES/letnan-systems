@@ -64,6 +64,11 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <Link href="/services" className="text-white hover:text-gray-300">
+                Serviços
+              </Link>
+            </li>
+            <li>
               <Link href="/infrastructure" className="text-white hover:text-gray-300">
                 Infraestrutura
               </Link>
@@ -81,11 +86,6 @@ export default function Header() {
             <li>
               <Link href="/swot" className="text-white hover:text-gray-300">
                 Análise SWOT
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="text-white hover:text-gray-300">
-                Serviços
               </Link>
             </li>
             <li>
@@ -119,6 +119,26 @@ export default function Header() {
             <li>
               <Link href="/services" className="text-white hover:text-gray-300">
                 Serviços
+              </Link>
+            </li>
+            <li>
+              <Link href="/infrastructure" className="text-white hover:text-gray-300">
+                Infraestrutura
+              </Link>
+            </li>
+            <li>
+              <Link href="/compliance" className="text-white hover:text-gray-300">
+                Compliance
+              </Link>
+            </li>
+            <li>
+              <Link href="/bsc" className="text-white hover:text-gray-300">
+                Análise BSC
+              </Link>
+            </li>
+            <li>
+              <Link href="/swot" className="text-white hover:text-gray-300">
+                Análise SWOT
               </Link>
             </li>
             <li>
